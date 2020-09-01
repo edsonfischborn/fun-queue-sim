@@ -1,0 +1,59 @@
+:root {
+  --color-dark: #23272a;
+  --color-dark-light: #485563;
+  --color-dark-light-2: #555e69;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 90vh;
+  width: 100%;
+}
+
+main>a#cancelQueue {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+  main {
+    flex-direction: column !important;
+  }
+  #monitor>div {
+    width: 100%;
+  }
+}
+
+.background-dark {
+  background-color: var(--color-dark);
+}
+
+.background-light-dark {
+  background-color: var(--color-dark-light);
+}
+
+.background-light-dark-2 {
+  background-color: var(--color-dark-light-2);
+}
+
+.scrollbars::-webkit-scrollbar {
+  width: 13px;
+  background-color: transparent;
+  background-color: var(--color-dark-light-2);
+}
+
+.scrollbars::-webkit-scrollbar-thumb {
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
