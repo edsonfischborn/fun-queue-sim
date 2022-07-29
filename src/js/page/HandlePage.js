@@ -48,7 +48,7 @@ class HandlePage {
   }
 
   async mainOnSubmit() {
-    this.main.classList.add('d-flex');
+    this.main.classList.replace('d-none', 'd-flex');
 
     this.handleQueue = new HandleQueue(this.formContainer.data);
 
